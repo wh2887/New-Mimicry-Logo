@@ -11,23 +11,21 @@ body,
 html {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100vh;
-  height: 100vh;
-  color: #fb7299;
 }
 
 .img-box {
-  width: 450px;
-  height: 400px;
+  max-width: 50vh;
+  max-height: 50vh;
   border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-top: 50%;
+  /* margin-bottom: 50%; */
+  /* align-items: center; 控制box在屏幕纵向上居中了 */
 }
 ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -35,10 +33,8 @@ ul > li {
   width: 100px;
   height: 100px;
   padding: 10px;
-  margin: 20px;
+  margin: 10px; /*值大了的话会影响ul盒模型超过body的边界*/
   display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1),
     -20px -20px 30px rgba(255, 255, 255, 0.1);
   border-radius: 20px;
